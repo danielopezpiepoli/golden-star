@@ -28,11 +28,11 @@
 
       <nav class="nav-container" id="nav-container">
         <ul class="nav-links">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="tour-dates.html" class="nav-link">Concerts & Tickets</a></li>
-          <li><a href="programs.html" class="nav-link">Programs</a></li>
-          <li><a href="weddings.html" class="nav-link">Weddings</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="tour-dates.html" class="nav-link" data-i18n="nav_concerts">Concerts & Tickets</a></li>
+          <li><a href="programs.html" class="nav-link" data-i18n="nav_programs">Programs</a></li>
+          <li><a href="weddings.html" class="nav-link" data-i18n="nav_weddings">Weddings</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a></li>
         </ul>
 
         <!-- Language Selector -->
@@ -44,7 +44,7 @@
           <button class="lang-btn" data-lang="de">DE</button>
         </div>
 
-        <a href="#wedding-inquiry" class="btn btn-outline btn-nav">Book Weddings</a>
+        <a href="weddings.html#wedding-inquiry" class="btn btn-outline btn-nav" data-i18n="btn_book_weddings">Book Weddings</a>
       </nav>
     </div>
   </header>
@@ -52,10 +52,10 @@
   <!-- HERO SECTION -->
   <section class="wedding-hero">
     <div class="container wedding-hero-content">
-      <span class="hero-tagline">Aristocratic Elegance & Romantic Atmospheres</span>
-      <h1>Bespoke Wedding Music</h1>
-      <p>Elevate your special day with the timeless warmth of live strings. From solemn ceremonial entrances to sparkling *Bridgerton-style* cocktail hours.</p>
-      <a href="#packages" class="btn btn-gold">Explore Packages</a>
+      <span class="hero-tagline" data-i18n="wed_hero_tagline">Aristocratic Elegance & Romantic Atmospheres</span>
+      <h1 data-i18n="wed_hero_title">Bespoke Wedding Music</h1>
+      <p data-i18n="wed_hero_desc">Elevate your special day with the timeless warmth of live strings. From solemn ceremonial entrances to sparkling *Bridgerton-style* cocktail hours.</p>
+      <a href="#packages" class="btn btn-gold" data-i18n="wed_hero_btn_explore">Explore Packages</a>
     </div>
   </section>
 
@@ -64,8 +64,8 @@
     <!-- PACKAGES SECTION -->
     <section id="packages" class="section-container">
       <div class="section-title">
-        <span>Curated Experiences</span>
-        <h2>Wedding Collections</h2>
+        <span data-i18n="wed_pkg_uptitle">Curated Experiences</span>
+        <h2 data-i18n="wed_pkg_main_title">Wedding Collections</h2>
       </div>
 
       <div class="packages-grid">
@@ -73,58 +73,58 @@
         <!-- Package 1 -->
         <div class="package-card">
           <div class="package-header">
-            <span class="package-tag">Intimate</span>
-            <h3>The Ceremony</h3>
-            <p class="package-desc">Perfect for couples seeking refined, solemn beauty during their vows.</p>
+            <span class="package-tag" data-i18n="wed_p1_tag">Intimate</span>
+            <h3 data-i18n="wed_p1_title">The Ceremony</h3>
+            <p class="package-desc" data-i18n="wed_p1_desc">Perfect for couples seeking refined, solemn beauty during their vows.</p>
           </div>
           <ul class="package-features">
-            <li>Guest seating prelude (15–20 mins)</li>
-            <li>Bridal party & bride processional entrance</li>
-            <li>Signing of the register & interlude</li>
-            <li>Joyful recessional exit</li>
-            <li>1 custom song arrangement of your choice</li>
+            <li data-i18n="wed_p1_f1">Guest seating prelude (15–20 mins)</li>
+            <li data-i18n="wed_p1_f2">Bridal party & bride processional entrance</li>
+            <li data-i18n="wed_p1_f3">Signing of the register & interlude</li>
+            <li data-i18n="wed_p1_f4">Joyful recessional exit</li>
+            <li data-i18n="wed_p1_f5">1 custom song arrangement of your choice</li>
           </ul>
           <div class="package-footer">
-            <a href="#wedding-inquiry" class="btn btn-outline btn-full select-package-btn" data-package="The Ceremony">Request Availability</a>
+            <a href="#wedding-inquiry" class="btn btn-outline btn-full select-package-btn" data-package="The Ceremony" data-i18n="wed_btn_req_avail">Request Availability</a>
           </div>
         </div>
 
         <!-- Package 2 (Featured) -->
         <div class="package-card featured-package">
-          <div class="popular-ribbon">Most Requested</div>
+          <div class="popular-ribbon" data-i18n="wed_p2_ribbon">Most Requested</div>
           <div class="package-header">
-            <span class="package-tag">Signature</span>
-            <h3>Ceremony & Cocktail</h3>
-            <p class="package-desc">The complete acoustic journey from emotional vows to sparkling reception.</p>
+            <span class="package-tag" data-i18n="wed_p2_tag">Signature</span>
+            <h3 data-i18n="wed_p2_title">Ceremony & Cocktail</h3>
+            <p class="package-desc" data-i18n="wed_p2_desc">The complete acoustic journey from emotional vows to sparkling reception.</p>
           </div>
           <ul class="package-features">
-            <li><strong>Full Ceremony coverage</strong> (prelude to exit)</li>
-            <li><strong>Up to 90 minutes of Cocktail Hour live music</strong></li>
-            <li>Vibrant mix of modern pop covers & jazz standards</li>
-            <li>Seamless transition between ceremony and cocktail venues</li>
-            <li>Up to 2 custom song arrangements included</li>
+            <li data-i18n="wed_p2_f1"><strong>Full Ceremony coverage</strong> (prelude to exit)</li>
+            <li data-i18n="wed_p2_f2"><strong>Up to 90 minutes of Cocktail Hour live music</strong></li>
+            <li data-i18n="wed_p2_f3">Vibrant mix of modern pop covers & jazz standards</li>
+            <li data-i18n="wed_p2_f4">Seamless transition between ceremony and cocktail venues</li>
+            <li data-i18n="wed_p2_f5">Up to 2 custom song arrangements included</li>
           </ul>
           <div class="package-footer">
-            <a href="#wedding-inquiry" class="btn btn-gold btn-full select-package-btn" data-package="Ceremony & Cocktail">Request Availability</a>
+            <a href="#wedding-inquiry" class="btn btn-gold btn-full select-package-btn" data-package="Ceremony & Cocktail" data-i18n="wed_btn_req_avail">Request Availability</a>
           </div>
         </div>
 
         <!-- Package 3 -->
         <div class="package-card">
           <div class="package-header">
-            <span class="package-tag">All-Inclusive</span>
-            <h3>The Grand Gala</h3>
-            <p class="package-desc">A continuous musical narrative for luxury estate & destination weddings.</p>
+            <span class="package-tag" data-i18n="wed_p3_tag">All-Inclusive</span>
+            <h3 data-i18n="wed_p3_title">The Grand Gala</h3>
+            <p class="package-desc" data-i18n="wed_p3_desc">A continuous musical narrative for luxury estate & destination weddings.</p>
           </div>
           <ul class="package-features">
-            <li><strong>Full Ceremony & extended Cocktail reception</strong></li>
-            <li>Background string accompaniment during Dinner</li>
-            <li>Special arrangement for the couple's First Dance</li>
-            <li>Sound amplification setup (for outdoor/large estates)</li>
-            <li>Unlimited custom song arrangements</li>
+            <li data-i18n="wed_p3_f1"><strong>Full Ceremony & extended Cocktail reception</strong></li>
+            <li data-i18n="wed_p3_f2">Background string accompaniment during Dinner</li>
+            <li data-i18n="wed_p3_f3">Special arrangement for the couple's First Dance</li>
+            <li data-i18n="wed_p3_f4">Sound amplification setup (for outdoor/large estates)</li>
+            <li data-i18n="wed_p3_f5">Unlimited custom song arrangements</li>
           </ul>
           <div class="package-footer">
-            <a href="#wedding-inquiry" class="btn btn-outline btn-full select-package-btn" data-package="The Grand Gala">Request Availability</a>
+            <a href="#wedding-inquiry" class="btn btn-outline btn-full select-package-btn" data-package="The Grand Gala" data-i18n="wed_btn_req_avail">Request Availability</a>
           </div>
         </div>
 
@@ -134,9 +134,9 @@
     <!-- REPERTOIRE HIGHLIGHTS -->
     <section class="section-container wedding-repertoire-box">
       <div class="section-title">
-        <span>What We Play</span>
-        <h2>Popular Wedding Repertoire</h2>
-        <p class="repertoire-lead">A curated selection of our most requested pieces for ceremony entrances, candlelit cocktail hours, and luxury galas.</p>
+        <span data-i18n="wed_rep_uptitle">What We Play</span>
+        <h2 data-i18n="wed_rep_main_title">Popular Wedding Repertoire</h2>
+        <p class="repertoire-lead" data-i18n="wed_rep_lead">A curated selection of our most requested pieces for ceremony entrances, candlelit cocktail hours, and luxury galas.</p>
       </div>
 
       <div class="rep-cards-grid">
@@ -145,8 +145,8 @@
         <div class="rep-card">
           <div class="rep-card-header">
             <span class="rep-card-icon">✦</span>
-            <h3>Modern & Bridgerton</h3>
-            <p>Romantic pop acoustic arrangements</p>
+            <h3 data-i18n="wed_rep_c1_title">Modern & Bridgerton</h3>
+            <p data-i18n="wed_rep_c1_desc">Romantic pop acoustic arrangements</p>
           </div>
           <ul class="rep-song-list">
             <li>
@@ -176,8 +176,8 @@
         <div class="rep-card">
           <div class="rep-card-header">
             <span class="rep-card-icon">✦</span>
-            <h3>Classical & Sacred</h3>
-            <p>Timeless architectural beauty</p>
+            <h3 data-i18n="wed_rep_c2_title">Classical & Sacred</h3>
+            <p data-i18n="wed_rep_c2_desc">Timeless architectural beauty</p>
           </div>
           <ul class="rep-song-list">
             <li>
@@ -207,8 +207,8 @@
         <div class="rep-card">
           <div class="rep-card-header">
             <span class="rep-card-icon">✦</span>
-            <h3>Cinema & Soundtracks</h3>
-            <p>Emotional orchestral narratives</p>
+            <h3 data-i18n="wed_rep_c3_title">Cinema & Soundtracks</h3>
+            <p data-i18n="wed_rep_c3_desc">Emotional orchestral narratives</p>
           </div>
           <ul class="rep-song-list">
             <li>
@@ -241,9 +241,9 @@
     <section id="wedding-inquiry" class="section-container inquiry-section">
       <div class="inquiry-form-wrapper">
         <div class="section-title">
-          <span>Get in Touch</span>
-          <h2>Reserve Your Date</h2>
-          <p class="inquiry-subtitle">Tell us about your wedding vision. We will confirm date availability and send a customized quote within 24 hours.</p>
+          <span data-i18n="wed_form_uptitle">Get in Touch</span>
+          <h2 data-i18n="wed_form_main_title">Reserve Your Date</h2>
+          <p class="inquiry-subtitle" data-i18n="wed_form_subtitle">Tell us about your wedding vision. We will confirm date availability and send a customized quote within 24 hours.</p>
         </div>
 
         <form class="wedding-form" id="weddingForm" action="https://api.web3forms.com/submit" method="POST">
@@ -255,46 +255,46 @@
 
           <div class="form-row">
             <div class="form-group">
-              <label for="coupleNames">Couple's Names *</label>
-              <input type="text" id="coupleNames" name="names" placeholder="e.g. Eleanor & Lucas" required>
+              <label for="coupleNames" data-i18n="wed_lbl_names">Couple's Names *</label>
+              <input type="text" id="coupleNames" name="names" placeholder="e.g. Eleanor & Lucas" data-i18n-placeholder="wed_ph_names" required>
             </div>
             <div class="form-group">
-              <label for="email">Email Address *</label>
-              <input type="email" id="email" name="email" placeholder="contact@example.com" required>
+              <label for="email" data-i18n="wed_lbl_email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="contact@example.com" data-i18n-placeholder="wed_ph_email" required>
             </div>
           </div>
 
           <div class="form-row">
             <div class="form-group">
-              <label for="weddingDate">Wedding Date *</label>
+              <label for="weddingDate" data-i18n="wed_lbl_date">Wedding Date *</label>
               <input type="date" id="weddingDate" name="date" required>
             </div>
             <div class="form-group">
-              <label for="location">Venue & City *</label>
-              <input type="text" id="location" name="location" placeholder="e.g. Schloss Bensberg, Bergisch Gladbach" required>
+              <label for="location" data-i18n="wed_lbl_location">Venue & City *</label>
+              <input type="text" id="location" name="location" placeholder="e.g. Schloss Bensberg, Bergisch Gladbach" data-i18n-placeholder="wed_ph_location" required>
             </div>
           </div>
 
           <div class="form-group">
-            <label for="selectedPackage">Selected Collection</label>
+            <label for="selectedPackage" data-i18n="wed_lbl_package">Selected Collection</label>
             <select id="selectedPackage" name="package">
-              <option value="Ceremony & Cocktail (Signature)">Ceremony & Cocktail (Signature - Most Requested)</option>
-              <option value="The Ceremony (Intimate)">The Ceremony (Intimate)</option>
-              <option value="The Grand Gala (All-Inclusive)">The Grand Gala (All-Inclusive)</option>
-              <option value="Custom / Undecided">Custom / Need Guidance</option>
+              <option value="Ceremony & Cocktail (Signature)" data-i18n="wed_opt_p2">Ceremony & Cocktail (Signature - Most Requested)</option>
+              <option value="The Ceremony (Intimate)" data-i18n="wed_opt_p1">The Ceremony (Intimate)</option>
+              <option value="The Grand Gala (All-Inclusive)" data-i18n="wed_opt_p3">The Grand Gala (All-Inclusive)</option>
+              <option value="Custom / Undecided" data-i18n="wed_opt_custom">Custom / Need Guidance</option>
             </select>
           </div>
 
           <div class="form-group">
-            <label for="message">Special Requests or Favorite Songs</label>
-            <textarea id="message" name="message" rows="4" placeholder="Tell us if you have special entrance songs, indoor/outdoor plans, or specific timing..."></textarea>
+            <label for="message" data-i18n="wed_lbl_message">Special Requests or Favorite Songs</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us if you have special entrance songs, indoor/outdoor plans, or specific timing..." data-i18n-placeholder="wed_ph_message"></textarea>
           </div>
 
-          <button type="submit" id="submitBtn" class="btn btn-gold btn-full" style="padding: 16px; font-size: 0.85rem;">Send Wedding Inquiry</button>
+          <button type="submit" id="submitBtn" class="btn btn-gold btn-full" style="padding: 16px; font-size: 0.85rem;" data-i18n="wed_btn_submit">Send Wedding Inquiry</button>
 
           <!-- Alternativa de contacto directo -->
           <p class="direct-mail-note">
-            Prefer direct communication? Call us at <a href="tel:+48698972105">+48 698 972 105</a> or write to <a href="mailto:gsmusictrio@gmail.com">gsmusictrio@gmail.com</a>
+            <span data-i18n="wed_direct_note_prefix">Prefer direct communication? Call us at</span> <a href="tel:+48698972105">+48 698 972 105</a> <span data-i18n="wed_direct_note_or">or write to</span> <a href="mailto:gsmusictrio@gmail.com">gsmusictrio@gmail.com</a>
           </p>
 
           <div id="formResult" style="margin-top: 18px; text-align: center; font-size: 0.9rem; display: none;"></div>
@@ -309,19 +309,19 @@
     <div class="container footer-content">
       <div class="footer-col">
         <h4>Golden Star</h4>
-        <p>A professional European string quartet specializing in chamber concert seasons, high-end private galas, and bespoke studio recordings.</p>
+        <p data-i18n="footer_tagline">A professional European string quartet specializing in chamber concert seasons, high-end private galas, and bespoke studio recordings.</p>
       </div>
       <div class="footer-col">
-        <h4>Inquiries & Management</h4>
+        <h4 data-i18n="footer_inquiries_title">Inquiries & Management</h4>
         <ul>
           <li><a href="mailto:stella.karalis@goldenstarmusic.agency">stella.karalis@goldenstarmusic.agency</a></li>
           <li><a href="tel:+48698972105">+48 698 972 105</a></li>
-          <li><a href="weddings.html">Wedding Packages</a></li>
-          <li><a href="contact.html">General Contact</a></li>
+          <li><a href="weddings.html" data-i18n="footer_link_packages">Wedding Packages</a></li>
+          <li><a href="contact.html" data-i18n="footer_link_contact">General Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Connect & Follow</h4>
+        <h4 data-i18n="footer_connect_title">Connect & Follow</h4>
         <ul class="social-links-list">
           <li>
             <a href="https://www.instagram.com/golden.star.quartet?igsh=MTdlNHd3OGw3M2x0dw==" target="_blank" rel="noopener noreferrer" class="social-link-item">
@@ -345,9 +345,9 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 Golden Star String Quartet. All rights reserved.</span>
+      <span data-i18n="footer_rights">© 2026 Golden Star String Quartet. All rights reserved.</span>
       <span class="footer-separator">•</span>
-      <span>Web Design by <a href="https://github.com/danielopezpiepoli" target="_blank" rel="noopener noreferrer" class="designer-name">Daniel López Piepoli</a></span>
+      <span><span data-i18n="footer_design_by">Web Design by</span> <a href="https://github.com/danielopezpiepoli" target="_blank" rel="noopener noreferrer" class="designer-name">Daniel López Piepoli</a></span>
     </div>
   </footer>
 

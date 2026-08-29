@@ -22,12 +22,14 @@
       </button>
       <nav class="nav-container" id="nav-container">
         <ul class="nav-links">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="tour-dates.html" class="nav-link">Concerts & Tickets</a></li>
-          <li><a href="programs.html" class="nav-link">Programs</a></li>
-          <li><a href="weddings.html" class="nav-link">Weddings</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="tour-dates.html" class="nav-link" data-i18n="nav_concerts">Concerts & Tickets</a></li>
+          <li><a href="programs.html" class="nav-link" data-i18n="nav_programs">Programs</a></li>
+          <li><a href="weddings.html" class="nav-link" data-i18n="nav_weddings">Weddings</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a></li>
         </ul>
+
+        <!-- Language Selector -->
         <div class="lang-switch">
           <button class="lang-btn active" data-lang="en">EN</button>
           <span class="lang-divider">|</span>
@@ -35,7 +37,8 @@
           <span class="lang-divider">|</span>
           <button class="lang-btn" data-lang="de">DE</button>
         </div>
-        <a href="weddings.html#wedding-inquiry" class="btn btn-outline btn-nav">Book Weddings</a>
+
+        <a href="weddings.html#wedding-inquiry" class="btn btn-outline btn-nav" data-i18n="btn_book_weddings">Book Weddings</a>
       </nav>
     </div>
   </header>
@@ -43,16 +46,16 @@
   <!-- TOUR HERO -->
   <section class="tour-header-section">
     <div class="container">
-      <a href="index.html#concerts" class="back-link">← Back to Overview</a>
-      <span class="badge" style="margin-top: 15px;">European Tour 2026</span>
-      <h1>Tour Dates & Concert Schedules</h1>
-      <p class="tour-desc">Select a production category to view dates, venue details, and book your tickets.</p>
+      <a href="index.html#concerts" class="back-link" data-i18n="tour_back_link">← Back to Overview</a>
+      <span class="badge" style="margin-top: 15px;" data-i18n="tour_hero_badge">European Tour 2026</span>
+      <h1 data-i18n="tour_hero_title">Tour Dates & Concert Schedules</h1>
+      <p class="tour-desc" data-i18n="tour_hero_desc">Select a production category to view dates, venue details, and book your tickets.</p>
       
       <!-- BOTONES DE FILTRO (TABS) -->
       <div class="filter-tab-bar">
-        <button class="filter-tab-btn active" data-filter="all">All Concerts</button>
-        <button class="filter-tab-btn" data-filter="nosferatu">Nosferatu Live</button>
-        <button class="filter-tab-btn" data-filter="soundtracks">Soundtracks & Strings</button>
+        <button class="filter-tab-btn active" data-filter="all" data-i18n="tour_filter_all">All Concerts</button>
+        <button class="filter-tab-btn" data-filter="nosferatu" data-i18n="tour_filter_nosferatu">Nosferatu Live</button>
+        <button class="filter-tab-btn" data-filter="soundtracks" data-i18n="tour_filter_soundtracks">Soundtracks & Strings</button>
       </div>
     </div>
   </section>
@@ -66,10 +69,10 @@
       <div class="city-accordion-item" data-category="soundtracks">
         <button class="city-accordion-header">
           <div class="city-title-group">
-            <span class="city-date">OCT 15, 2026</span>
+            <span class="city-date" data-i18n="tour_d1_date">OCT 15, 2026</span>
             <div class="city-meta-wrap">
-              <span class="city-name">Szczecin, Poland</span>
-              <span class="city-production-tag">Tribute to Hans Zimmer ft. Joanna Sinkiewicz</span>
+              <span class="city-name" data-i18n="tour_d1_city">Szczecin, Poland</span>
+              <span class="city-production-tag" data-i18n="tour_d1_tag">Tribute to Hans Zimmer ft. Joanna Sinkiewicz</span>
             </div>
           </div>
           <span class="accordion-icon">+</span>
@@ -77,14 +80,14 @@
         <div class="city-accordion-body">
           <div class="venue-info-grid">
             <div class="venue-details">
-              <h4>Venue & Schedule</h4>
-              <p><strong>Venue:</strong> Nowa Dekadencja (Szczecińskie Centrum Kultury)</p>
-              <p><strong>Concert Starts:</strong> 19:30</p>
-              <p class="venue-note">Featuring guest vocalist Joanna Sinkiewicz performing Interstellar, Gladiator, and Inception themes with the Golden Star Quartet.</p>
+              <h4 data-i18n="tour_venue_title">Venue & Schedule</h4>
+              <p><strong><span data-i18n="tour_lbl_venue">Venue:</span></strong> Nowa Dekadencja (Szczecińskie Centrum Kultury)</p>
+              <p><strong><span data-i18n="tour_lbl_starts">Concert Starts:</span></strong> 19:30</p>
+              <p class="venue-note" data-i18n="tour_d1_note">Featuring guest vocalist Joanna Sinkiewicz performing Interstellar, Gladiator, and Inception themes with the Golden Star Quartet.</p>
             </div>
             <div class="ticket-action-box">
-              <span class="ticket-status">Official Presale Active</span>
-              <a href="https://www.ebilet.pl/klasyka/muzyka-filmowa/tribute-to-hans-zimmer?srsltid=AfmBOoqo48l4LVL0lE-1UVKaYrMuffGh_f7ANNVoY0e38yBBhvkjArsb" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-full">
+              <span class="ticket-status" data-i18n="badge_presale_active">Official Presale Active</span>
+              <a href="https://www.ebilet.pl/klasyka/muzyka-filmowa/tribute-to-hans-zimmer?srsltid=AfmBOoqo48l4LVL0lE-1UVKaYrMuffGh_f7ANNVoY0e38yBBhvkjArsb" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-full" data-i18n="tour_btn_buy_ebilet">
                 Buy Tickets on eBilet ↗
               </a>
             </div>
@@ -96,10 +99,10 @@
       <div class="city-accordion-item" data-category="nosferatu">
         <button class="city-accordion-header">
           <div class="city-title-group">
-            <span class="city-date">OCT 28, 2026</span>
+            <span class="city-date" data-i18n="tour_d2_date">OCT 28, 2026</span>
             <div class="city-meta-wrap">
-              <span class="city-name">Berlin, Germany</span>
-              <span class="city-production-tag">Nosferatu (1922) Live Cine-Concert</span>
+              <span class="city-name" data-i18n="tour_d2_city">Berlin, Germany</span>
+              <span class="city-production-tag" data-i18n="tour_d2_tag">Nosferatu (1922) Live Cine-Concert</span>
             </div>
           </div>
           <span class="accordion-icon">+</span>
@@ -107,15 +110,15 @@
         <div class="city-accordion-body">
           <div class="venue-info-grid">
             <div class="venue-details">
-              <h4>Venue & Schedule</h4>
-              <p><strong>Venue:</strong> Theater am Delphi</p>
-              <p><strong>Address:</strong> Gustav-Adolf-Straße 2, 13086 Berlin</p>
-              <p><strong>Screening & Live Score:</strong> 19:30</p>
-              <p class="venue-note">1922 silent film with string sextet, piano & conductor Katarzyna Marek performing Johannes Brahms (~65 mins).</p>
+              <h4 data-i18n="tour_venue_title">Venue & Schedule</h4>
+              <p><strong><span data-i18n="tour_lbl_venue">Venue:</span></strong> Theater am Delphi</p>
+              <p><strong><span data-i18n="tour_lbl_address">Address:</span></strong> Gustav-Adolf-Straße 2, 13086 Berlin</p>
+              <p><strong><span data-i18n="tour_lbl_screening_score">Screening & Live Score:</span></strong> 19:30</p>
+              <p class="venue-note" data-i18n="tour_d2_note">1922 silent film with string sextet, piano & conductor Katarzyna Marek performing Johannes Brahms (~65 mins).</p>
             </div>
             <div class="ticket-action-box">
-              <span class="ticket-status">Official Presale Active</span>
-              <a href="https://eventfrog.de/en/p/classical-music-operas/classical-music/nosferatu-1922-eine-symphonie-des-grauens-mit-live-music-7498376787619005592.html" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-full">
+              <span class="ticket-status" data-i18n="badge_presale_active">Official Presale Active</span>
+              <a href="https://eventfrog.de/en/p/classical-music-operas/classical-music/nosferatu-1922-eine-symphonie-des-grauens-mit-live-music-7498376787619005592.html" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-full" data-i18n="tour_btn_buy_eventfrog">
                 Buy Tickets on Eventfrog ↗
               </a>
             </div>
@@ -127,10 +130,10 @@
       <div class="city-accordion-item" data-category="nosferatu">
         <button class="city-accordion-header">
           <div class="city-title-group">
-            <span class="city-date">OCT 29, 2026</span>
+            <span class="city-date" data-i18n="tour_d3_date">OCT 29, 2026</span>
             <div class="city-meta-wrap">
-              <span class="city-name">Toruń, Poland</span>
-              <span class="city-production-tag">Nosferatu (1922) Live Cine-Concert</span>
+              <span class="city-name" data-i18n="tour_d3_city">Toruń, Poland</span>
+              <span class="city-production-tag" data-i18n="tour_d3_tag">Nosferatu (1922) Live Cine-Concert</span>
             </div>
           </div>
           <span class="accordion-icon">+</span>
@@ -138,15 +141,15 @@
         <div class="city-accordion-body">
           <div class="venue-info-grid">
             <div class="venue-details">
-              <h4>Venue & Schedule</h4>
-              <p><strong>Venue:</strong> Dwór Artusa (Centrum Kultury)</p>
-              <p><strong>Address:</strong> Rynek Staromiejski 6, 87-100 Toruń</p>
-              <p><strong>Screening & Live Score:</strong> 19:00</p>
-              <p class="venue-note">Gothic atmosphere under ambient candlelit stage setup.</p>
+              <h4 data-i18n="tour_venue_title">Venue & Schedule</h4>
+              <p><strong><span data-i18n="tour_lbl_venue">Venue:</span></strong> Dwór Artusa (Centrum Kultury)</p>
+              <p><strong><span data-i18n="tour_lbl_address">Address:</span></strong> Rynek Staromiejski 6, 87-100 Toruń</p>
+              <p><strong><span data-i18n="tour_lbl_screening_score">Screening & Live Score:</span></strong> 19:00</p>
+              <p class="venue-note" data-i18n="tour_d3_note">Gothic atmosphere under ambient candlelit stage setup.</p>
             </div>
             <div class="ticket-action-box">
-              <span class="ticket-status" style="color: var(--text-muted);">Presale Opening Soon</span>
-              <a href="contact.html" class="btn btn-outline btn-full">
+              <span class="ticket-status" style="color: var(--text-muted);" data-i18n="badge_presale_soon">Presale Opening Soon</span>
+              <a href="contact.html" class="btn btn-outline btn-full" data-i18n="btn_contact_booking">
                 Contact for Tickets
               </a>
             </div>
@@ -158,10 +161,10 @@
       <div class="city-accordion-item" data-category="nosferatu">
         <button class="city-accordion-header">
           <div class="city-title-group">
-            <span class="city-date">OCT 30, 2026</span>
+            <span class="city-date" data-i18n="tour_d4_date">OCT 30, 2026</span>
             <div class="city-meta-wrap">
-              <span class="city-name">Poznań, Poland</span>
-              <span class="city-production-tag">Nosferatu (1922) Live Cine-Concert</span>
+              <span class="city-name" data-i18n="tour_d4_city">Poznań, Poland</span>
+              <span class="city-production-tag" data-i18n="tour_d4_tag">Nosferatu (1922) Live Cine-Concert</span>
             </div>
           </div>
           <span class="accordion-icon">+</span>
@@ -169,15 +172,15 @@
         <div class="city-accordion-body">
           <div class="venue-info-grid">
             <div class="venue-details">
-              <h4>Venue & Schedule</h4>
-              <p><strong>Venue:</strong> Pałac Mielżyńskich</p>
-              <p><strong>Address:</strong> Stary Rynek 91, 61-772 Poznań</p>
-              <p><strong>Screening & Live Score:</strong> 19:00</p>
-              <p class="venue-note">Expressionist silent cine-concert with augmented chamber sextet and piano.</p>
+              <h4 data-i18n="tour_venue_title">Venue & Schedule</h4>
+              <p><strong><span data-i18n="tour_lbl_venue">Venue:</span></strong> Pałac Mielżyńskich</p>
+              <p><strong><span data-i18n="tour_lbl_address">Address:</span></strong> Stary Rynek 91, 61-772 Poznań</p>
+              <p><strong><span data-i18n="tour_lbl_screening_score">Screening & Live Score:</span></strong> 19:00</p>
+              <p class="venue-note" data-i18n="tour_d4_note">Expressionist silent cine-concert with augmented chamber sextet and piano.</p>
             </div>
             <div class="ticket-action-box">
-              <span class="ticket-status" style="color: var(--text-muted);">Presale Opening Soon</span>
-              <a href="contact.html" class="btn btn-outline btn-full">
+              <span class="ticket-status" style="color: var(--text-muted);" data-i18n="badge_presale_soon">Presale Opening Soon</span>
+              <a href="contact.html" class="btn btn-outline btn-full" data-i18n="btn_contact_booking">
                 Contact for Tickets
               </a>
             </div>
@@ -189,10 +192,10 @@
       <div class="city-accordion-item" data-category="nosferatu">
         <button class="city-accordion-header">
           <div class="city-title-group">
-            <span class="city-date">OCT 31, 2026</span>
+            <span class="city-date" data-i18n="tour_d5_date">OCT 31, 2026</span>
             <div class="city-meta-wrap">
-              <span class="city-name">Wrocław, Poland</span>
-              <span class="city-production-tag">Nosferatu Halloween Cine-Concert</span>
+              <span class="city-name" data-i18n="tour_d5_city">Wrocław, Poland</span>
+              <span class="city-production-tag" data-i18n="tour_d5_tag">Nosferatu Halloween Cine-Concert</span>
             </div>
           </div>
           <span class="accordion-icon">+</span>
@@ -200,15 +203,15 @@
         <div class="city-accordion-body">
           <div class="venue-info-grid">
             <div class="venue-details">
-              <h4>Venue & Schedule</h4>
-              <p><strong>Venue:</strong> Kino Nowe Horyzonty</p>
-              <p><strong>Address:</strong> Kazimierza Wielkiego 19a/21, 50-077 Wrocław</p>
-              <p><strong>Screening Starts:</strong> 18:00</p>
-              <p class="venue-note">Special Halloween evening screening with live musical narrative conducted by Katarzyna Marek.</p>
+              <h4 data-i18n="tour_venue_title">Venue & Schedule</h4>
+              <p><strong><span data-i18n="tour_lbl_venue">Venue:</span></strong> Kino Nowe Horyzonty</p>
+              <p><strong><span data-i18n="tour_lbl_address">Address:</span></strong> Kazimierza Wielkiego 19a/21, 50-077 Wrocław</p>
+              <p><strong><span data-i18n="tour_lbl_screening_starts">Screening Starts:</span></strong> 18:00</p>
+              <p class="venue-note" data-i18n="tour_d5_note">Special Halloween evening screening with live musical narrative conducted by Katarzyna Marek.</p>
             </div>
             <div class="ticket-action-box">
-              <span class="ticket-status" style="color: var(--text-muted);">Presale Opening Soon</span>
-              <a href="contact.html" class="btn btn-outline btn-full">
+              <span class="ticket-status" style="color: var(--text-muted);" data-i18n="badge_presale_soon">Presale Opening Soon</span>
+              <a href="contact.html" class="btn btn-outline btn-full" data-i18n="btn_contact_booking">
                 Contact for Tickets
               </a>
             </div>
@@ -220,10 +223,10 @@
       <div class="city-accordion-item" data-category="soundtracks">
         <button class="city-accordion-header">
           <div class="city-title-group">
-            <span class="city-date">NOV 10, 2026</span>
+            <span class="city-date" data-i18n="tour_d6_date">NOV 10, 2026</span>
             <div class="city-meta-wrap">
-              <span class="city-name">Szczecin, Poland</span>
-              <span class="city-production-tag">Best of Michael Jackson (Pop on Strings)</span>
+              <span class="city-name" data-i18n="tour_d6_city">Szczecin, Poland</span>
+              <span class="city-production-tag" data-i18n="tour_d6_tag">Best of Michael Jackson (Pop on Strings)</span>
             </div>
           </div>
           <span class="accordion-icon">+</span>
@@ -231,15 +234,15 @@
         <div class="city-accordion-body">
           <div class="venue-info-grid">
             <div class="venue-details">
-              <h4>Venue & Schedule</h4>
-              <p><strong>Venue:</strong> Jazzment Klub</p>
-              <p><strong>Address:</strong> Kurkowa 4/1, 70-535 Szczecin</p>
-              <p><strong>Concert Starts:</strong> 20:00</p>
-              <p class="venue-note">Iconic hits (Billie Jean, Smooth Criminal, Thriller, Beat It) in high-energy classical quartet arrangements.</p>
+              <h4 data-i18n="tour_venue_title">Venue & Schedule</h4>
+              <p><strong><span data-i18n="tour_lbl_venue">Venue:</span></strong> Jazzment Klub</p>
+              <p><strong><span data-i18n="tour_lbl_address">Address:</span></strong> Kurkowa 4/1, 70-535 Szczecin</p>
+              <p><strong><span data-i18n="tour_lbl_starts">Concert Starts:</span></strong> 20:00</p>
+              <p class="venue-note" data-i18n="tour_d6_note">Iconic hits (Billie Jean, Smooth Criminal, Thriller, Beat It) in high-energy classical quartet arrangements.</p>
             </div>
             <div class="ticket-action-box">
-              <span class="ticket-status">Official Presale Active</span>
-              <a href="https://jazzmentklub.tixx.pl/bilety/3553/best-of-michael-jackson-na-cztery-smyczki.html" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-full">
+              <span class="ticket-status" data-i18n="badge_presale_active">Official Presale Active</span>
+              <a href="https://jazzmentklub.tixx.pl/bilety/3553/best-of-michael-jackson-na-cztery-smyczki.html" target="_blank" rel="noopener noreferrer" class="btn btn-gold btn-full" data-i18n="tour_btn_buy_jazzment">
                 Buy Tickets on Jazzment Tixx ↗
               </a>
             </div>
@@ -321,19 +324,19 @@
     <div class="container footer-content">
       <div class="footer-col">
         <h4>Golden Star</h4>
-        <p>A professional European string quartet specializing in chamber concert seasons, high-end private galas, and bespoke studio recordings.</p>
+        <p data-i18n="footer_tagline">A professional European string quartet specializing in chamber concert seasons, high-end private galas, and bespoke studio recordings.</p>
       </div>
       <div class="footer-col">
-        <h4>Inquiries & Management</h4>
+        <h4 data-i18n="footer_inquiries_title">Inquiries & Management</h4>
         <ul>
           <li><a href="mailto:stella.karalis@goldenstarmusic.agency">stella.karalis@goldenstarmusic.agency</a></li>
           <li><a href="tel:+48698972105">+48 698 972 105</a></li>
-          <li><a href="weddings.html">Wedding Packages</a></li>
-          <li><a href="contact.html">General Contact</a></li>
+          <li><a href="weddings.html" data-i18n="footer_link_packages">Wedding Packages</a></li>
+          <li><a href="contact.html" data-i18n="footer_link_contact">General Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Connect & Follow</h4>
+        <h4 data-i18n="footer_connect_title">Connect & Follow</h4>
         <ul class="social-links-list">
           <li>
             <a href="https://www.instagram.com/golden.star.quartet?igsh=MTdlNHd3OGw3M2x0dw==" target="_blank" rel="noopener noreferrer" class="social-link-item">
@@ -357,9 +360,9 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 Golden Star String Quartet. All rights reserved.</span>
+      <span data-i18n="footer_rights">© 2026 Golden Star String Quartet. All rights reserved.</span>
       <span class="footer-separator">•</span>
-      <span>Web Design by <a href="https://github.com/danielopezpiepoli" target="_blank" rel="noopener noreferrer" class="designer-name">Daniel López Piepoli</a></span>
+      <span><span data-i18n="footer_design_by">Web Design by</span> <a href="https://github.com/danielopezpiepoli" target="_blank" rel="noopener noreferrer" class="designer-name">Daniel López Piepoli</a></span>
     </div>
   </footer>
 

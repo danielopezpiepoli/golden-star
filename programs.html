@@ -22,12 +22,14 @@
       </button>
       <nav class="nav-container" id="nav-container">
         <ul class="nav-links">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="tour-dates.html" class="nav-link">Concerts & Tickets</a></li>
-          <li><a href="programs.html" class="nav-link">Programs</a></li>
-          <li><a href="weddings.html" class="nav-link">Weddings</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="tour-dates.html" class="nav-link" data-i18n="nav_concerts">Concerts & Tickets</a></li>
+          <li><a href="programs.html" class="nav-link" data-i18n="nav_programs">Programs</a></li>
+          <li><a href="weddings.html" class="nav-link" data-i18n="nav_weddings">Weddings</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a></li>
         </ul>
+
+        <!-- Language Selector -->
         <div class="lang-switch">
           <button class="lang-btn active" data-lang="en">EN</button>
           <span class="lang-divider">|</span>
@@ -35,7 +37,8 @@
           <span class="lang-divider">|</span>
           <button class="lang-btn" data-lang="de">DE</button>
         </div>
-        <a href="weddings.html#wedding-inquiry" class="btn btn-outline btn-nav">Book Weddings</a>
+
+        <a href="weddings.html#wedding-inquiry" class="btn btn-outline btn-nav" data-i18n="btn_book_weddings">Book Weddings</a>
       </nav>
     </div>
   </header>
@@ -43,9 +46,9 @@
   <!-- HERO SECTION -->
   <section class="tour-header-section">
     <div class="container">
-      <span class="badge">Artistic Repertoire & Touring Productions</span>
-      <h1>Concert Programs</h1>
-      <p class="tour-desc">From silent cinema live-accompaniments to cinematic homages, pop crossover, and philharmonic chamber masterworks.</p>
+      <span class="badge" data-i18n="programs_hero_badge">Artistic Repertoire & Touring Productions</span>
+      <h1 data-i18n="programs_hero_title">Concert Programs</h1>
+      <p class="tour-desc" data-i18n="programs_hero_desc">From silent cinema live-accompaniments to cinematic homages, pop crossover, and philharmonic chamber masterworks.</p>
     </div>
   </section>
 
@@ -60,29 +63,29 @@
           <a href="nosferatu.html">
             <img src="assets/Nosferatu-poster.jpg" alt="Nosferatu Live String Accompaniment Tour Poster">
           </a>
-          <span class="poster-badge">Special Cine-Concert</span>
+          <span class="poster-badge" data-i18n="prog_nosferatu_badge">Special Cine-Concert</span>
         </div>
         <div class="program-content-side">
           <div class="program-meta-top">
-            <span class="badge">Cinema in Concert</span>
-            <span class="program-duration">Duration: ~65 mins (String Sextet + Piano)</span>
+            <span class="badge" data-i18n="prog_nosferatu_tag">Cinema in Concert</span>
+            <span class="program-duration" data-i18n="prog_nosferatu_duration">Duration: ~65 mins (String Sextet + Piano)</span>
           </div>
-          <h2>Nosferatu: A Symphony of Horror (1922)</h2>
-          <p class="program-lead">Live Silent Film Screening with Johannes Brahms Score & Live Conductor</p>
+          <h2 data-i18n="prog_nosferatu_title">Nosferatu: A Symphony of Horror (1922)</h2>
+          <p class="program-lead" data-i18n="prog_nosferatu_lead">Live Silent Film Screening with Johannes Brahms Score & Live Conductor</p>
           <div class="program-body-text">
-            <p>F.W. Murnau's 1922 Expressionist masterpiece performed with live chamber accompaniment (string sextet and piano) under conductor Katarzyna Marek. A dark, hypnotic encounter between German Expressionism and Romanticism.</p>
+            <p data-i18n="prog_nosferatu_desc">F.W. Murnau's 1922 Expressionist masterpiece performed with live chamber accompaniment (string sextet and piano) under conductor Katarzyna Marek. A dark, hypnotic encounter between German Expressionism and Romanticism.</p>
           </div>
           <div class="program-highlights-box">
-            <h4>Cast & Production Highlights</h4>
+            <h4 data-i18n="prog_cast_highlights_title">Cast & Production Highlights</h4>
             <ul>
-              <li>Conducted by Katarzyna Marek (Augmented Sextet & Piano)</li>
-              <li>Restored 1922 archival screening synchronized with Brahms repertoire</li>
-              <li>Atmospheric candlelight staging across historic venues</li>
+              <li data-i18n="prog_nosferatu_hl1">Conducted by Katarzyna Marek (Augmented Sextet & Piano)</li>
+              <li data-i18n="prog_nosferatu_hl2">Restored 1922 archival screening synchronized with Brahms repertoire</li>
+              <li data-i18n="prog_nosferatu_hl3">Atmospheric candlelight staging across historic venues</li>
             </ul>
           </div>
           <div class="program-actions">
-            <a href="tour-dates.html?tour=nosferatu" class="btn btn-gold">View Tour Dates & Tickets</a>
-            <a href="nosferatu.html" class="btn btn-outline">Full Production Dossier & Cast →</a>
+            <a href="tour-dates.html?tour=nosferatu" class="btn btn-gold" data-i18n="index_nosferatu_btn_dates">View Tour Dates & Tickets</a>
+            <a href="nosferatu.html" class="btn btn-outline" data-i18n="index_nosferatu_btn_dossier">Full Production Dossier & Cast →</a>
           </div>
         </div>
       </article>
@@ -93,29 +96,29 @@
           <a href="hans-zimmer.html">
             <img src="assets/hans-zimmer-poster.jpg" onerror="this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=700&q=80'" alt="Tribute to Hans Zimmer Poster">
           </a>
-          <span class="poster-badge">Cinematic Series</span>
+          <span class="poster-badge" data-i18n="index_p1_badge">Cinematic Series</span>
         </div>
         <div class="program-content-side">
           <div class="program-meta-top">
-            <span class="badge">Hollywood & Epic Scores</span>
-            <span class="program-duration">Duration: ~80 mins</span>
+            <span class="badge" data-i18n="prog_hz_tag">Hollywood & Epic Scores</span>
+            <span class="program-duration" data-i18n="prog_hz_duration">Duration: ~80 mins</span>
           </div>
-          <h2>Tribute to Hans Zimmer</h2>
-          <p class="program-lead">Featuring Special Guest Vocalist Joanna Sinkiewicz</p>
+          <h2 data-i18n="index_p1_title">Tribute to Hans Zimmer</h2>
+          <p class="program-lead" data-i18n="prog_hz_lead">Featuring Special Guest Vocalist Joanna Sinkiewicz</p>
           <div class="program-body-text">
-            <p>Experience the moving film scores from <em>Gladiator, Inception, Interstellar, The Lion King, James Bond</em>, and <em>Pirates of the Caribbean</em>. The subtle quartet strings and ethereal vocals bring Zimmer's pulsating rhythms to life.</p>
+            <p data-i18n="prog_hz_desc">Experience the moving film scores from <em>Gladiator, Inception, Interstellar, The Lion King, James Bond</em>, and <em>Pirates of the Caribbean</em>. The subtle quartet strings and ethereal vocals bring Zimmer's pulsating rhythms to life.</p>
           </div>
           <div class="program-highlights-box">
-            <h4>Production Highlights</h4>
+            <h4 data-i18n="prog_prod_highlights_title">Production Highlights</h4>
             <ul>
-              <li>Guest vocal soloist Joanna Sinkiewicz</li>
-              <li>Intimate, intense chamber arrangements of Hollywood's greatest themes</li>
-              <li>Live in Szczecin (Oct 15) & touring across Europe</li>
+              <li data-i18n="prog_hz_hl1">Guest vocal soloist Joanna Sinkiewicz</li>
+              <li data-i18n="prog_hz_hl2">Intimate, intense chamber arrangements of Hollywood's greatest themes</li>
+              <li data-i18n="prog_hz_hl3">Live in Szczecin (Oct 15) & touring across Europe</li>
             </ul>
           </div>
           <div class="program-actions">
-            <a href="tour-dates.html?tour=soundtracks" class="btn btn-gold">View Tour Dates & Tickets</a>
-            <a href="hans-zimmer.html" class="btn btn-outline">Full Production Dossier →</a>
+            <a href="tour-dates.html?tour=soundtracks" class="btn btn-gold" data-i18n="index_nosferatu_btn_dates">View Tour Dates & Tickets</a>
+            <a href="hans-zimmer.html" class="btn btn-outline" data-i18n="prog_btn_full_dossier">Full Production Dossier →</a>
           </div>
         </div>
       </article>
@@ -126,29 +129,29 @@
           <a href="michael-jackson.html">
             <img src="assets/michael-jackson-poster.jpg" onerror="this.src='https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=700&q=80'" alt="Best of Michael Jackson Poster">
           </a>
-          <span class="poster-badge">Pop Crossover</span>
+          <span class="poster-badge" data-i18n="index_p2_badge">Pop Crossover</span>
         </div>
         <div class="program-content-side">
           <div class="program-meta-top">
-            <span class="badge">King of Pop in Concert</span>
-            <span class="program-duration">Duration: ~75 mins</span>
+            <span class="badge" data-i18n="prog_mj_tag">King of Pop in Concert</span>
+            <span class="program-duration" data-i18n="prog_mj_duration">Duration: ~75 mins</span>
           </div>
-          <h2>Best of Michael Jackson</h2>
-          <p class="program-lead">Billie Jean, Smooth Criminal, Thriller & Beat It on Classical Strings</p>
+          <h2 data-i18n="index_p2_title">Best of Michael Jackson</h2>
+          <p class="program-lead" data-i18n="prog_mj_lead">Billie Jean, Smooth Criminal, Thriller & Beat It on Classical Strings</p>
           <div class="program-body-text">
-            <p>An electrifying concert taking audiences through the King of Pop's greatest hits. Classical poise meets raw rhythmic energy in original string quartet arrangements.</p>
+            <p data-i18n="prog_mj_desc">An electrifying concert taking audiences through the King of Pop's greatest hits. Classical poise meets raw rhythmic energy in original string quartet arrangements.</p>
           </div>
           <div class="program-highlights-box">
-            <h4>Production Highlights</h4>
+            <h4 data-i18n="prog_prod_highlights_title">Production Highlights</h4>
             <ul>
-              <li>High-energy classical crossover arrangements</li>
-              <li>Includes <em>Man in the Mirror, Black or White, Thriller</em> and more</li>
-              <li>Live in Szczecin (Nov 10) & touring</li>
+              <li data-i18n="prog_mj_hl1">High-energy classical crossover arrangements</li>
+              <li data-i18n="prog_mj_hl2">Includes <em>Man in the Mirror, Black or White, Thriller</em> and more</li>
+              <li data-i18n="prog_mj_hl3">Live in Szczecin (Nov 10) & touring</li>
             </ul>
           </div>
           <div class="program-actions">
-            <a href="tour-dates.html?tour=soundtracks" class="btn btn-gold">View Tour Dates & Tickets</a>
-            <a href="michael-jackson.html" class="btn btn-outline">Full Production Dossier →</a>
+            <a href="tour-dates.html?tour=soundtracks" class="btn btn-gold" data-i18n="index_nosferatu_btn_dates">View Tour Dates & Tickets</a>
+            <a href="michael-jackson.html" class="btn btn-outline" data-i18n="prog_btn_full_dossier">Full Production Dossier →</a>
           </div>
         </div>
       </article>
@@ -157,29 +160,29 @@
       <article class="program-detail-card">
         <div class="program-poster-side">
           <img src="https://images.unsplash.com/photo-1465847899084-d164df4dedc6?auto=format&fit=crop&w=700&q=80" alt="Classical Masterpieces String Quartet Poster">
-          <span class="poster-badge">Masterworks Series</span>
+          <span class="poster-badge" data-i18n="index_p3_badge">Masterworks Series</span>
         </div>
         <div class="program-content-side">
           <div class="program-meta-top">
-            <span class="badge">Chamber Heritage</span>
-            <span class="program-duration">Duration: ~90 mins (With Intermission)</span>
+            <span class="badge" data-i18n="prog_classic_tag">Chamber Heritage</span>
+            <span class="program-duration" data-i18n="prog_classic_duration">Duration: ~90 mins (With Intermission)</span>
           </div>
-          <h2>Classical Masterpieces: From Vienna to Paris</h2>
-          <p class="program-lead">Dvořák, Schubert, Ravel & Beethoven</p>
+          <h2 data-i18n="prog_classic_title">Classical Masterpieces: From Vienna to Paris</h2>
+          <p class="program-lead" data-i18n="prog_classic_lead">Dvořák, Schubert, Ravel & Beethoven</p>
           <div class="program-body-text">
-            <p>A rigorous celebration of classical chamber music repertoire. Featuring Antonín Dvořák’s String Quartet No. 12 ("American"), Maurice Ravel’s impressionist Quartet in F Major, and select movements from Schubert and Beethoven.</p>
+            <p data-i18n="prog_classic_desc">A rigorous celebration of classical chamber music repertoire. Featuring Antonín Dvořák’s String Quartet No. 12 ("American"), Maurice Ravel’s impressionist Quartet in F Major, and select movements from Schubert and Beethoven.</p>
           </div>
           <div class="program-highlights-box">
-            <h4>Production Highlights</h4>
+            <h4 data-i18n="prog_prod_highlights_title">Production Highlights</h4>
             <ul>
-              <li>Pure acoustic chamber performance adhering to historical interpretation</li>
-              <li>Ideal for international chamber music festivals and philharmonic seasons</li>
-              <li>Comprehensive program notes provided for venue booklets</li>
+              <li data-i18n="prog_classic_hl1">Pure acoustic chamber performance adhering to historical interpretation</li>
+              <li data-i18n="prog_classic_hl2">Ideal for international chamber music festivals and philharmonic seasons</li>
+              <li data-i18n="prog_classic_hl3">Comprehensive program notes provided for venue booklets</li>
             </ul>
           </div>
           <div class="program-actions">
-            <a href="tour-dates.html?tour=classical" class="btn btn-gold">View Tour Dates</a>
-            <a href="contact.html" class="btn btn-outline">Inquire for Season Booking</a>
+            <a href="tour-dates.html?tour=classical" class="btn btn-gold" data-i18n="btn_view_dates">View Tour Dates</a>
+            <a href="contact.html" class="btn btn-outline" data-i18n="prog_classic_btn_inquire">Inquire for Season Booking</a>
           </div>
         </div>
       </article>
@@ -188,10 +191,10 @@
 
     <!-- BANNER INFERIOR -->
     <section class="cta-banner-box">
-      <span class="badge">Curated Commissions</span>
-      <h2>Looking for a Custom Concert Program?</h2>
-      <p>We develop bespoke themed repertoire, private anniversary programs, and studio collaborations on request.</p>
-      <a href="contact.html" class="btn btn-gold">Get in Touch with Management</a>
+      <span class="badge" data-i18n="prog_custom_badge">Curated Commissions</span>
+      <h2 data-i18n="prog_custom_title">Looking for a Custom Concert Program?</h2>
+      <p data-i18n="prog_custom_desc">We develop bespoke themed repertoire, private anniversary programs, and studio collaborations on request.</p>
+      <a href="contact.html" class="btn btn-gold" data-i18n="prog_custom_btn">Get in Touch with Management</a>
     </section>
 
   </main>
@@ -201,19 +204,19 @@
     <div class="container footer-content">
       <div class="footer-col">
         <h4>Golden Star</h4>
-        <p>A professional European string quartet specializing in chamber concert seasons, high-end private galas, and bespoke studio recordings.</p>
+        <p data-i18n="footer_tagline">A professional European string quartet specializing in chamber concert seasons, high-end private galas, and bespoke studio recordings.</p>
       </div>
       <div class="footer-col">
-        <h4>Inquiries & Management</h4>
+        <h4 data-i18n="footer_inquiries_title">Inquiries & Management</h4>
         <ul>
           <li><a href="mailto:stella.karalis@goldenstarmusic.agency">stella.karalis@goldenstarmusic.agency</a></li>
           <li><a href="tel:+48698972105">+48 698 972 105</a></li>
-          <li><a href="weddings.html">Wedding Packages</a></li>
-          <li><a href="contact.html">General Contact</a></li>
+          <li><a href="weddings.html" data-i18n="footer_link_packages">Wedding Packages</a></li>
+          <li><a href="contact.html" data-i18n="footer_link_contact">General Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Connect & Follow</h4>
+        <h4 data-i18n="footer_connect_title">Connect & Follow</h4>
         <ul class="social-links-list">
           <li>
             <a href="https://www.instagram.com/golden.star.quartet?igsh=MTdlNHd3OGw3M2x0dw==" target="_blank" rel="noopener noreferrer" class="social-link-item">
@@ -237,9 +240,9 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 Golden Star String Quartet. All rights reserved.</span>
+      <span data-i18n="footer_rights">© 2026 Golden Star String Quartet. All rights reserved.</span>
       <span class="footer-separator">•</span>
-      <span>Web Design by <a href="https://github.com/danielopezpiepoli" target="_blank" rel="noopener noreferrer" class="designer-name">Daniel López Piepoli</a></span>
+      <span><span data-i18n="footer_design_by">Web Design by</span> <a href="https://github.com/danielopezpiepoli" target="_blank" rel="noopener noreferrer" class="designer-name">Daniel López Piepoli</a></span>
     </div>
   </footer>
 

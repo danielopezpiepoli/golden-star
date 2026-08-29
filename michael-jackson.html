@@ -22,12 +22,14 @@
       </button>
       <nav class="nav-container" id="nav-container">
         <ul class="nav-links">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="tour-dates.html" class="nav-link">Concerts & Tickets</a></li>
-          <li><a href="programs.html" class="nav-link">Programs</a></li>
-          <li><a href="weddings.html" class="nav-link">Weddings</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="tour-dates.html" class="nav-link" data-i18n="nav_concerts">Concerts & Tickets</a></li>
+          <li><a href="programs.html" class="nav-link" data-i18n="nav_programs">Programs</a></li>
+          <li><a href="weddings.html" class="nav-link" data-i18n="nav_weddings">Weddings</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a></li>
         </ul>
+
+        <!-- Language Selector -->
         <div class="lang-switch">
           <button class="lang-btn active" data-lang="en">EN</button>
           <span class="lang-divider">|</span>
@@ -35,7 +37,8 @@
           <span class="lang-divider">|</span>
           <button class="lang-btn" data-lang="de">DE</button>
         </div>
-        <a href="weddings.html#wedding-inquiry" class="btn btn-outline btn-nav">Book Weddings</a>
+
+        <a href="weddings.html#wedding-inquiry" class="btn btn-outline btn-nav" data-i18n="btn_book_weddings">Book Weddings</a>
       </nav>
     </div>
   </header>
@@ -43,10 +46,10 @@
   <!-- PRODUCTION HERO TITLE -->
   <section class="tour-header-section" style="padding-bottom: 24px;">
     <div class="container">
-      <a href="programs.html" class="back-link">← Back to Concert Programs</a>
-      <span class="badge" style="margin-top: 15px; display: inline-block;">Pop Crossover Series</span>
-      <h1 style="font-size: clamp(2.4rem, 5.5vw, 4.2rem); margin: 12px 0 10px 0;">Best of Michael Jackson</h1>
-      <p class="tour-desc" style="max-width: 820px;">The greatest hits of the King of Pop reimagined with classical virtuosity and driving acoustic rhythm.</p>
+      <a href="programs.html" class="back-link" data-i18n="mj_back_link">← Back to Concert Programs</a>
+      <span class="badge" style="margin-top: 15px; display: inline-block;" data-i18n="mj_hero_badge">Pop Crossover Series</span>
+      <h1 style="font-size: clamp(2.4rem, 5.5vw, 4.2rem); margin: 12px 0 10px 0;" data-i18n="mj_hero_title">Best of Michael Jackson</h1>
+      <p class="tour-desc" style="max-width: 820px;" data-i18n="mj_hero_desc">The greatest hits of the King of Pop reimagined with classical virtuosity and driving acoustic rhythm.</p>
     </div>
   </section>
 
@@ -60,21 +63,21 @@
       <div class="single-poster-frame" id="mainPosterTrigger" title="Click to expand poster">
         <img src="assets/michael-jackson-poster.jpg" onerror="this.src='https://images.unsplash.com/photo-1470225620780-dba8ba36b745?auto=format&fit=crop&w=700&q=80'" alt="Best of Michael Jackson Concert Poster" class="lightbox-trigger" data-type="image" data-src="assets/michael-jackson-poster.jpg">
         <div class="media-hover-overlay">
-          <span>🔍 Click to Expand</span>
+          <span data-i18n="lightbox_expand">🔍 Click to Expand</span>
         </div>
       </div>
 
       <!-- Columna Derecha: Información y Botón -->
       <div class="single-info-column">
         <div class="single-info-card">
-          <span class="badge">Pop Legend & Strings</span>
-          <h2>The King of Pop Reimagined</h2>
-          <p>
+          <span class="badge" data-i18n="mj_card_badge">Pop Legend & Strings</span>
+          <h2 data-i18n="mj_card_title">The King of Pop Reimagined</h2>
+          <p data-i18n="mj_card_desc">
             A musical journey through Michael Jackson’s legendary discography. Iconic anthems like <em>Billie Jean, Beat It, Smooth Criminal, Thriller, Black or White</em>, and <em>Man in the Mirror</em> are given fresh life through original arrangements for string quartet.
           </p>
           <div class="program-highlights-box" style="margin-bottom: 0;">
-            <h4>Virtuosity & Rhythm</h4>
-            <p style="font-size: 0.88rem; color: var(--text-main); margin-bottom: 0;">
+            <h4 data-i18n="mj_virtuosity_title">Virtuosity & Rhythm</h4>
+            <p style="font-size: 0.88rem; color: var(--text-main); margin-bottom: 0;" data-i18n="mj_virtuosity_desc">
               Combining classical poise with infectious groove, the ensemble turns violins and cellos into percussive, electrifying instruments.
             </p>
           </div>
@@ -82,13 +85,13 @@
 
         <div class="nosferatu-quick-bar">
           <div class="quick-meta">
-            <span class="meta-tag">Michael Jackson Hits</span>
+            <span class="meta-tag" data-i18n="mj_meta_hits">Michael Jackson Hits</span>
             <span class="meta-separator">•</span>
-            <span class="meta-tag">String Quartet</span>
+            <span class="meta-tag" data-i18n="mj_meta_quartet">String Quartet</span>
             <span class="meta-separator">•</span>
-            <span class="meta-tag">~75 Mins</span>
+            <span class="meta-tag" data-i18n="mj_meta_runtime">~75 Mins</span>
           </div>
-          <a href="tour-dates.html?tour=soundtracks" class="btn btn-gold btn-action-large">View Dates & Buy Tickets</a>
+          <a href="tour-dates.html?tour=soundtracks" class="btn btn-gold btn-action-large" data-i18n="mj_btn_dates_tickets">View Dates & Buy Tickets</a>
         </div>
       </div>
 
@@ -99,21 +102,24 @@
       
       <article class="nosferatu-text-col">
         <section class="essay-block">
-          <span class="badge">Acoustic Crossover</span>
-          <h2>Timeless Pop Meets Chamber Brilliance</h2>
-          <p>
-            <em>Best of Michael Jackson</em> takes audiences on an exhilarating musical journey through the greatest hits of pop royalty. Jackson’s iconic songs are endowed with new life through original arrangements created specifically for string quartet, combining classical elegance with high-energy modern performance.
+          <span class="badge" data-i18n="mj_essay_badge1">Acoustic Crossover</span>
+          <h2 data-i18n="mj_essay_title1">Timeless Pop Meets Chamber Brilliance</h2>
+          <p data-i18n="mj_p1">
+            Best of Michael Jackson is a unique evening with the Golden Star String Quartet, taking the audience on a musical journey through the greatest hits of the King of Pop. Michael Jackson’s iconic songs are given new life through original arrangements for string instruments, combining the elegance of classical music with the energy and timeless appeal of his greatest hits.
           </p>
-          <p>
-            The expressive range of violins, viola, and cello allows these universally known melodies to be rediscovered anew—filled with subtlety, emotion, and rhythmic power.
+          <p data-i18n="mj_p2">
+            During the concert, you will hear such legendary songs as Billie Jean, Beat It, Smooth Criminal, Thriller, Black or White, Man in the Mirror, and many other compositions that have become an enduring part of the history of popular music.
+          </p>
+          <p data-i18n="mj_p3">
+            The sound of violins, viola, and cello allows these familiar melodies to be discovered anew — with subtlety, emotion, and extraordinary expressive power.
           </p>
         </section>
 
         <section class="essay-block" style="margin-top: 40px;">
-          <span class="badge">The Experience</span>
-          <h2>An Evening for All Generations</h2>
-          <p>
-            This production is designed both for devoted Michael Jackson fans and for classical concertgoers who appreciate virtuoso interpretations. Proving that great music is truly timeless, these legendary pop structures sound captivating in historic halls, clubs, and modern venues alike.
+          <span class="badge" data-i18n="mj_essay_badge2">The Experience</span>
+          <h2 data-i18n="mj_essay_title2">An Evening for All Generations</h2>
+          <p data-i18n="mj_p4">
+            This concert is perfect both for devoted Michael Jackson fans and for lovers of live music who appreciate original interpretations of the world’s greatest hits. “Best of Michael Jackson” is an evening filled with emotion, virtuosity, and unforgettable musical experiences, proving that great songs are timeless — and that they sound just as powerful and captivating in a classical setting.
           </p>
         </section>
       </article>
@@ -122,26 +128,26 @@
         
         <div class="cast-roster-box">
           <div class="cast-header">
-            <span class="badge">Ensemble</span>
-            <h3>Golden Star Quartet</h3>
+            <span class="badge" data-i18n="mj_cast_badge">Ensemble</span>
+            <h3 data-i18n="mj_cast_title">Golden Star Quartet</h3>
           </div>
 
           <ul class="cast-list" style="margin-top: 10px;">
-            <li><span class="cast-instrument">Violin I</span><span class="cast-name">Stella Karalis</span></li>
-            <li><span class="cast-instrument">Violin II</span><span class="cast-name">Justyna Sajewicz</span></li>
-            <li><span class="cast-instrument">Viola</span><span class="cast-name">Nikola Haręża</span></li>
-            <li><span class="cast-instrument">Violoncello</span><span class="cast-name">Olgierd Żemojtel</span></li>
+            <li><span class="cast-instrument" data-i18n="mj_inst_vln1">Violin I</span><span class="cast-name">Stella Karalis</span></li>
+            <li><span class="cast-instrument" data-i18n="mj_inst_vln2">Violin II</span><span class="cast-name">Justyna Sajewicz</span></li>
+            <li><span class="cast-instrument" data-i18n="mj_inst_vla">Viola</span><span class="cast-name">Nikola Haręża</span></li>
+            <li><span class="cast-instrument" data-i18n="mj_inst_vc">Violoncello</span><span class="cast-name">Olgierd Żemojtel</span></li>
           </ul>
         </div>
 
         <div class="production-specs-card">
-          <h4>Program Details</h4>
+          <h4 data-i18n="mj_specs_title">Program Details</h4>
           <ul class="specs-list">
-            <li><strong>Repertoire:</strong> Billie Jean, Beat It, Smooth Criminal, Thriller, Black or White, Man in the Mirror, and more.</li>
-            <li><strong>Duration:</strong> ~75 minutes without intermission.</li>
-            <li><strong>Instrumentation:</strong> String Quartet (2 Violins, Viola, Cello).</li>
+            <li><strong data-i18n="mj_spec_lbl_rep">Repertoire:</strong> <span data-i18n="mj_spec_val_rep">Billie Jean, Beat It, Smooth Criminal, Thriller, Black or White, Man in the Mirror, and more.</span></li>
+            <li><strong data-i18n="mj_spec_lbl_dur">Duration:</strong> <span data-i18n="mj_spec_val_dur">~75 minutes without intermission.</span></li>
+            <li><strong data-i18n="mj_spec_lbl_inst">Instrumentation:</strong> <span data-i18n="mj_spec_val_inst">String Quartet (2 Violins, Viola, Cello).</span></li>
           </ul>
-          <a href="contact.html" class="btn btn-outline btn-full" style="margin-top: 18px;">Host This Concert at Your Venue</a>
+          <a href="contact.html" class="btn btn-outline btn-full" style="margin-top: 18px;" data-i18n="mj_specs_btn_host">Host This Concert at Your Venue</a>
         </div>
 
       </aside>
@@ -150,10 +156,10 @@
 
     <!-- BANNER FINAL -->
     <section class="cta-banner-box" style="margin-top: 60px;">
-      <span class="badge">Upcoming Performance</span>
-      <h2>Experience Best of Michael Jackson Live</h2>
-      <p>Join us on <strong>November 10, 2026</strong> at Jazzment Klub in Szczecin, Poland.</p>
-      <a href="tour-dates.html?tour=soundtracks" class="btn btn-gold">Get Concert Tickets</a>
+      <span class="badge" data-i18n="mj_cta_badge">Upcoming Performance</span>
+      <h2 data-i18n="mj_cta_title">Experience Best of Michael Jackson Live</h2>
+      <p data-i18n="mj_cta_desc">Join us on <strong>November 10, 2026</strong> at Jazzment Klub in Szczecin, Poland.</p>
+      <a href="tour-dates.html?tour=soundtracks" class="btn btn-gold" data-i18n="mj_btn_get_tickets">Get Concert Tickets</a>
     </section>
 
   </main>
@@ -184,19 +190,19 @@
     <div class="container footer-content">
       <div class="footer-col">
         <h4>Golden Star</h4>
-        <p>A professional European string quartet specializing in chamber concert seasons, high-end private galas, and bespoke studio recordings.</p>
+        <p data-i18n="footer_tagline">A professional European string quartet specializing in chamber concert seasons, high-end private galas, and bespoke studio recordings.</p>
       </div>
       <div class="footer-col">
-        <h4>Inquiries & Management</h4>
+        <h4 data-i18n="footer_inquiries_title">Inquiries & Management</h4>
         <ul>
           <li><a href="mailto:stella.karalis@goldenstarmusic.agency">stella.karalis@goldenstarmusic.agency</a></li>
           <li><a href="tel:+48698972105">+48 698 972 105</a></li>
-          <li><a href="weddings.html">Wedding Packages</a></li>
-          <li><a href="contact.html">General Contact</a></li>
+          <li><a href="weddings.html" data-i18n="footer_link_packages">Wedding Packages</a></li>
+          <li><a href="contact.html" data-i18n="footer_link_contact">General Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Connect & Follow</h4>
+        <h4 data-i18n="footer_connect_title">Connect & Follow</h4>
         <ul class="social-links-list">
           <li>
             <a href="https://www.instagram.com/golden.star.quartet?igsh=MTdlNHd3OGw3M2x0dw==" target="_blank" rel="noopener noreferrer" class="social-link-item">
@@ -220,9 +226,9 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 Golden Star String Quartet. All rights reserved.</span>
+      <span data-i18n="footer_rights">© 2026 Golden Star String Quartet. All rights reserved.</span>
       <span class="footer-separator">•</span>
-      <span>Web Design by <a href="https://github.com/danielopezpiepoli" target="_blank" rel="noopener noreferrer" class="designer-name">Daniel López Piepoli</a></span>
+      <span><span data-i18n="footer_design_by">Web Design by</span> <a href="https://github.com/danielopezpiepoli" target="_blank" rel="noopener noreferrer" class="designer-name">Daniel López Piepoli</a></span>
     </div>
   </footer>
 

@@ -22,12 +22,14 @@
       </button>
       <nav class="nav-container" id="nav-container">
         <ul class="nav-links">
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="tour-dates.html" class="nav-link">Concerts & Tickets</a></li>
-          <li><a href="programs.html" class="nav-link">Programs</a></li>
-          <li><a href="weddings.html" class="nav-link">Weddings</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="index.html" class="nav-link" data-i18n="nav_home">Home</a></li>
+          <li><a href="tour-dates.html" class="nav-link" data-i18n="nav_concerts">Concerts & Tickets</a></li>
+          <li><a href="programs.html" class="nav-link" data-i18n="nav_programs">Programs</a></li>
+          <li><a href="weddings.html" class="nav-link" data-i18n="nav_weddings">Weddings</a></li>
+          <li><a href="contact.html" class="nav-link" data-i18n="nav_contact">Contact</a></li>
         </ul>
+
+        <!-- Language Selector -->
         <div class="lang-switch">
           <button class="lang-btn active" data-lang="en">EN</button>
           <span class="lang-divider">|</span>
@@ -35,7 +37,8 @@
           <span class="lang-divider">|</span>
           <button class="lang-btn" data-lang="de">DE</button>
         </div>
-        <a href="weddings.html#wedding-inquiry" class="btn btn-outline btn-nav">Book Weddings</a>
+
+        <a href="weddings.html#wedding-inquiry" class="btn btn-outline btn-nav" data-i18n="btn_book_weddings">Book Weddings</a>
       </nav>
     </div>
   </header>
@@ -43,10 +46,10 @@
   <!-- PRODUCTION HERO TITLE -->
   <section class="tour-header-section" style="padding-bottom: 24px;">
     <div class="container">
-      <a href="programs.html" class="back-link">← Back to Concert Programs</a>
-      <span class="badge" style="margin-top: 15px; display: inline-block;">Cinematic Live Series</span>
-      <h1 style="font-size: clamp(2.4rem, 5.5vw, 4.2rem); margin: 12px 0 10px 0;">Tribute to Hans Zimmer</h1>
-      <p class="tour-desc" style="max-width: 820px;">The iconic film scores of Hollywood’s master composer reimagined for string quartet with special guest vocalist <strong>Joanna Sinkiewicz</strong>.</p>
+      <a href="programs.html" class="back-link" data-i18n="hz_back_link">← Back to Concert Programs</a>
+      <span class="badge" style="margin-top: 15px; display: inline-block;" data-i18n="hz_hero_badge">Cinematic Live Series</span>
+      <h1 style="font-size: clamp(2.4rem, 5.5vw, 4.2rem); margin: 12px 0 10px 0;" data-i18n="hz_hero_title">Tribute to Hans Zimmer</h1>
+      <p class="tour-desc" style="max-width: 820px;" data-i18n="hz_hero_desc">The iconic film scores of Hollywood’s master composer reimagined for string quartet with special guest vocalist <strong>Joanna Sinkiewicz</strong>.</p>
     </div>
   </section>
 
@@ -60,21 +63,21 @@
       <div class="single-poster-frame" id="mainPosterTrigger" title="Click to expand poster">
         <img src="assets/hans-zimmer-poster.jpg" onerror="this.src='https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&w=700&q=80'" alt="Tribute to Hans Zimmer Concert Poster" class="lightbox-trigger" data-type="image" data-src="assets/hans-zimmer-poster.jpg">
         <div class="media-hover-overlay">
-          <span>🔍 Click to Expand</span>
+          <span data-i18n="lightbox_expand">🔍 Click to Expand</span>
         </div>
       </div>
 
       <!-- Columna Derecha: Información y Botón -->
       <div class="single-info-column">
         <div class="single-info-card">
-          <span class="badge">Hollywood & Epic Soundtracks</span>
-          <h2>A Symphony of Cinema & Voice</h2>
-          <p>
+          <span class="badge" data-i18n="hz_card_badge">Hollywood & Epic Soundtracks</span>
+          <h2 data-i18n="hz_card_title">A Symphony of Cinema & Voice</h2>
+          <p data-i18n="hz_card_desc">
             We invite you to a unique musical evening where the classical elegance of a string quartet meets the nostalgia of the silver screen. Featuring moving compositions from <em>Gladiator, Inception, Interstellar, The Lion King, James Bond</em>, and <em>Pirates of the Caribbean</em>.
           </p>
           <div class="program-highlights-box" style="margin-bottom: 0;">
-            <h4>Featured Guest Vocalist</h4>
-            <p style="font-size: 0.88rem; color: var(--text-main); margin-bottom: 0;">
+            <h4 data-i18n="hz_guest_title">Featured Guest Vocalist</h4>
+            <p style="font-size: 0.88rem; color: var(--text-main); margin-bottom: 0;" data-i18n="hz_guest_desc">
               Featuring <strong>Joanna Sinkiewicz</strong>, bringing lyrical and ethereal vocal layers that elevate Zimmer's minimalist motifs and pulsating rhythms into a cinematic journey.
             </p>
           </div>
@@ -82,13 +85,13 @@
 
         <div class="nosferatu-quick-bar">
           <div class="quick-meta">
-            <span class="meta-tag">Hans Zimmer Masterworks</span>
+            <span class="meta-tag" data-i18n="hz_meta_masterworks">Hans Zimmer Masterworks</span>
             <span class="meta-separator">•</span>
-            <span class="meta-tag">String Quartet & Vocalist</span>
+            <span class="meta-tag" data-i18n="hz_meta_quartet_vocal">String Quartet & Vocalist</span>
             <span class="meta-separator">•</span>
-            <span class="meta-tag">~80 Mins</span>
+            <span class="meta-tag" data-i18n="hz_meta_runtime">~80 Mins</span>
           </div>
-          <a href="tour-dates.html?tour=soundtracks" class="btn btn-gold btn-action-large">View Dates & Buy Tickets</a>
+          <a href="tour-dates.html?tour=soundtracks" class="btn btn-gold btn-action-large" data-i18n="hz_btn_dates_tickets">View Dates & Buy Tickets</a>
         </div>
       </div>
 
@@ -99,24 +102,27 @@
       
       <article class="nosferatu-text-col">
         <section class="essay-block">
-          <span class="badge">Artistic Concept</span>
-          <h2>The Magic of the Silver Screen</h2>
-          <p>
-            Hans Zimmer is undisputedly one of the greatest film composers of our time. His minimalist motifs, gradually building tensions, and distinctive pulsating rhythms gain exceptional clarity and emotional intensity when translated into the intimate chamber setting of four string instruments.
+          <span class="badge" data-i18n="hz_essay_badge1">Artistic Concept</span>
+          <h2 data-i18n="hz_essay_title1">The Magic of the Silver Screen</h2>
+          <p data-i18n="hz_p1">
+            We invite you to a unique musical evening where the classical elegance of a string quartet meets the nostalgia of the silver screen.
           </p>
-          <p>
-            The subtle acoustics of the Golden Star String Quartet reveal an unexplored side of these world-famous film themes. Stripped of massive synthetic walls of sound, the melodies breathe with warm, aristocratic resonance and pure harmonic nuance.
+          <p data-i18n="hz_p2">
+            The concert programme will feature some of the most beautiful and moving compositions by Hans Zimmer, one of the greatest film composers of our time. The audience will have the opportunity to hear music from films such as Gladiator, Inception, Interstellar, The Lion King, James Bond, and Pirates of the Caribbean.
+          </p>
+          <p data-i18n="hz_p3">
+            The subtle sound of the string quartet will reveal a new side of these well-known themes, giving them an intimate and profound chamber-music character. Zimmer’s minimalist motifs, gradually building tensions and distinctive pulsating rhythms gain exceptional clarity and emotional intensity in this setting.
           </p>
         </section>
 
         <section class="essay-block" style="margin-top: 40px;">
-          <span class="badge">Featured Soloist</span>
-          <h2>Guest Vocalist: Joanna Sinkiewicz</h2>
-          <p>
-            We are delighted to welcome <strong>Joanna Sinkiewicz</strong> as our special guest artist. An exceptional vocalist possessing a distinctive timbre and remarkable interpretative sensitivity, her participation in select pieces—inspired by the original orchestral vocal scores—adds an ethereal quality that completely immerses the audience.
+          <span class="badge" data-i18n="hz_essay_badge2">Featured Soloist</span>
+          <h2 data-i18n="hz_essay_title2">Guest Vocalist: Joanna Sinkiewicz</h2>
+          <p data-i18n="hz_p4">
+            We are delighted to welcome Joanna Sinkiewicz as a special guest — a vocalist with an exceptionally distinctive voice and remarkable interpretative sensitivity. Her participation in selected pieces, inspired by the original vocal parts, will add a lyrical and ethereal quality to the programme, transporting the audience into the world of cinematic storytelling.
           </p>
-          <p>
-            An evening tailored equally for film lovers, classical music enthusiasts, and anyone wishing to re-experience the emotional power of cinema captured through four acoustic instruments and one extraordinary voice.
+          <p data-i18n="hz_p5">
+            An evening for film lovers, classical music enthusiasts, and everyone who would like to experience the magic of their favourite movies all over again — this time captured in the sound of four instruments and one extraordinary voice.
           </p>
         </section>
       </article>
@@ -125,33 +131,33 @@
         
         <div class="cast-roster-box">
           <div class="cast-header">
-            <span class="badge">Lineup</span>
-            <h3>Ensemble & Soloist</h3>
+            <span class="badge" data-i18n="hz_cast_badge">Lineup</span>
+            <h3 data-i18n="hz_cast_title">Ensemble & Soloist</h3>
           </div>
 
           <div class="conductor-highlight">
-            <span class="cast-instrument">Featured Guest Vocalist</span>
+            <span class="cast-instrument" data-i18n="hz_role_vocalist">Featured Guest Vocalist</span>
             <span class="cast-name conductor-name">Joanna Sinkiewicz</span>
           </div>
 
-          <div class="ensemble-divider">Ensemble (Golden Star String Quartet)</div>
+          <div class="ensemble-divider" data-i18n="hz_ensemble_tag">Ensemble (Golden Star String Quartet)</div>
 
           <ul class="cast-list">
-            <li><span class="cast-instrument">Violin I</span><span class="cast-name">Stella Karalis</span></li>
-            <li><span class="cast-instrument">Violin II</span><span class="cast-name">Justyna Sajewicz</span></li>
-            <li><span class="cast-instrument">Viola</span><span class="cast-name">Nikola Haręża</span></li>
-            <li><span class="cast-instrument">Violoncello</span><span class="cast-name">Olgierd Żemojtel</span></li>
+            <li><span class="cast-instrument" data-i18n="mj_inst_vln1">Violin I</span><span class="cast-name">Stella Karalis</span></li>
+            <li><span class="cast-instrument" data-i18n="mj_inst_vln2">Violin II</span><span class="cast-name">Justyna Sajewicz</span></li>
+            <li><span class="cast-instrument" data-i18n="mj_inst_vla">Viola</span><span class="cast-name">Nikola Haręża</span></li>
+            <li><span class="cast-instrument" data-i18n="mj_inst_vc">Violoncello</span><span class="cast-name">Olgierd Żemojtel</span></li>
           </ul>
         </div>
 
         <div class="production-specs-card">
-          <h4>Program Details</h4>
+          <h4 data-i18n="hz_specs_title">Program Details</h4>
           <ul class="specs-list">
-            <li><strong>Repertoire:</strong> Interstellar, Gladiator, Inception, The Lion King, James Bond, Pirates of the Caribbean.</li>
-            <li><strong>Duration:</strong> ~80 minutes (with intermission option).</li>
-            <li><strong>Instrumentation:</strong> 2 Violins, Viola, Violoncello & Guest Vocalist.</li>
+            <li><strong data-i18n="hz_spec_lbl_rep">Repertoire:</strong> <span data-i18n="hz_spec_val_rep">Interstellar, Gladiator, Inception, The Lion King, James Bond, Pirates of the Caribbean.</span></li>
+            <li><strong data-i18n="mj_spec_lbl_dur">Duration:</strong> <span data-i18n="hz_spec_val_dur">~80 minutes (with intermission option).</span></li>
+            <li><strong data-i18n="hz_spec_lbl_inst">Instrumentation:</strong> <span data-i18n="hz_spec_val_inst">2 Violins, Viola, Violoncello & Guest Vocalist.</span></li>
           </ul>
-          <a href="contact.html" class="btn btn-outline btn-full" style="margin-top: 18px;">Host This Concert at Your Venue</a>
+          <a href="contact.html" class="btn btn-outline btn-full" style="margin-top: 18px;" data-i18n="hz_specs_btn_host">Host This Concert at Your Venue</a>
         </div>
 
       </aside>
@@ -160,10 +166,10 @@
 
     <!-- BANNER FINAL -->
     <section class="cta-banner-box" style="margin-top: 60px;">
-      <span class="badge">Upcoming Performance</span>
-      <h2>Experience Tribute to Hans Zimmer Live</h2>
-      <p>Join us on <strong>October 15, 2026</strong> at Nowa Dekadencja in Szczecin, Poland.</p>
-      <a href="tour-dates.html?tour=soundtracks" class="btn btn-gold">Get Concert Tickets</a>
+      <span class="badge" data-i18n="hz_cta_badge">Upcoming Performance</span>
+      <h2 data-i18n="hz_cta_title">Experience Tribute to Hans Zimmer Live</h2>
+      <p data-i18n="hz_cta_desc">Join us on <strong>October 15, 2026</strong> at Nowa Dekadencja in Szczecin, Poland.</p>
+      <a href="tour-dates.html?tour=soundtracks" class="btn btn-gold" data-i18n="mj_btn_get_tickets">Get Concert Tickets</a>
     </section>
 
   </main>
@@ -194,19 +200,19 @@
     <div class="container footer-content">
       <div class="footer-col">
         <h4>Golden Star</h4>
-        <p>A professional European string quartet specializing in chamber concert seasons, high-end private galas, and bespoke studio recordings.</p>
+        <p data-i18n="footer_tagline">A professional European string quartet specializing in chamber concert seasons, high-end private galas, and bespoke studio recordings.</p>
       </div>
       <div class="footer-col">
-        <h4>Inquiries & Management</h4>
+        <h4 data-i18n="footer_inquiries_title">Inquiries & Management</h4>
         <ul>
           <li><a href="mailto:stella.karalis@goldenstarmusic.agency">stella.karalis@goldenstarmusic.agency</a></li>
           <li><a href="tel:+48698972105">+48 698 972 105</a></li>
-          <li><a href="weddings.html">Wedding Packages</a></li>
-          <li><a href="contact.html">General Contact</a></li>
+          <li><a href="weddings.html" data-i18n="footer_link_packages">Wedding Packages</a></li>
+          <li><a href="contact.html" data-i18n="footer_link_contact">General Contact</a></li>
         </ul>
       </div>
       <div class="footer-col">
-        <h4>Connect & Follow</h4>
+        <h4 data-i18n="footer_connect_title">Connect & Follow</h4>
         <ul class="social-links-list">
           <li>
             <a href="https://www.instagram.com/golden.star.quartet?igsh=MTdlNHd3OGw3M2x0dw==" target="_blank" rel="noopener noreferrer" class="social-link-item">
@@ -230,9 +236,9 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 Golden Star String Quartet. All rights reserved.</span>
+      <span data-i18n="footer_rights">© 2026 Golden Star String Quartet. All rights reserved.</span>
       <span class="footer-separator">•</span>
-      <span>Web Design by <a href="https://github.com/danielopezpiepoli" target="_blank" rel="noopener noreferrer" class="designer-name">Daniel López Piepoli</a></span>
+      <span><span data-i18n="footer_design_by">Web Design by</span> <a href="https://github.com/danielopezpiepoli" target="_blank" rel="noopener noreferrer" class="designer-name">Daniel López Piepoli</a></span>
     </div>
   </footer>
 
