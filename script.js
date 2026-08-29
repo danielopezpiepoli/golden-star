@@ -80,96 +80,94 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 // 6. Envío asíncrono de Wedding Form mediante Web3Forms
-  const weddingForm = document.getElementById('weddingForm');
-  const resultMessage = document.getElementById('formResult');
-  const submitButton = document.getElementById('submitBtn');
+const weddingForm = document.getElementById('weddingForm');
+const resultMessage = document.getElementById('formResult');
+const submitButton = document.getElementById('submitBtn');
 
-  if (weddingForm) {
-    weddingForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const formData = new FormData(weddingForm);
-      const originalText = submitButton.textContent;
+if (weddingForm) {
+  weddingForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(weddingForm);
+    const originalText = submitButton.textContent;
 
-      submitButton.textContent = 'Sending Inquiry...';
-      submitButton.disabled = true;
+    submitButton.textContent = 'Sending Inquiry...';
+    submitButton.disabled = true;
 
-      fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        body: formData
-      })
-      .then(async (response) => {
-        const json = await response.json();
-        resultMessage.style.display = 'block';
-        if (response.status === 200) {
-          resultMessage.style.color = 'var(--gold-hover)';
-          resultMessage.innerHTML = '✦ Thank you! Your wedding inquiry has been sent successfully. We will reply within 24 hours.';
-          weddingForm.reset();
-        } else {
-          resultMessage.style.color = '#c0392b';
-          resultMessage.innerHTML = json.message || 'Something went wrong. Please email us directly at gsmusictrio@gmail.com';
-        }
-      })
-      .catch(() => {
-        resultMessage.style.display = 'block';
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    })
+    .then(async (response) => {
+      const json = await response.json();
+      resultMessage.style.display = 'block';
+      if (response.status === 200) {
+        resultMessage.style.color = 'var(--gold-hover)';
+        resultMessage.innerHTML = '✦ Thank you! Your wedding inquiry has been sent successfully. We will reply within 24 hours.';
+        weddingForm.reset();
+      } else {
         resultMessage.style.color = '#c0392b';
-        resultMessage.innerHTML = 'Network error. Please try again or contact us directly.';
-      })
-      .finally(() => {
-        submitButton.textContent = originalText;
-        submitButton.disabled = false;
-        setTimeout(() => {
-          resultMessage.style.display = 'none';
-        }, 8000);
-      });
+        resultMessage.innerHTML = json.message || 'Something went wrong. Please email us directly at gsmusictrio@gmail.com';
+      }
+    })
+    .catch(() => {
+      resultMessage.style.display = 'block';
+      resultMessage.style.color = '#c0392b';
+      resultMessage.innerHTML = 'Network error. Please try again or email us directly at gsmusictrio@gmail.com';
+    })
+    .finally(() => {
+      submitButton.textContent = originalText;
+      submitButton.disabled = false;
+      setTimeout(() => {
+        resultMessage.style.display = 'none';
+      }, 8000);
     });
-  }
-
-
+  });
+}
 
 // 7. Envío asíncrono de General Contact Form mediante Web3Forms
-  const generalForm = document.getElementById('generalContactForm');
-  const generalResult = document.getElementById('contactFormResult');
-  const generalSubmitBtn = document.getElementById('contactSubmitBtn');
+const generalForm = document.getElementById('generalContactForm');
+const generalResult = document.getElementById('contactFormResult');
+const generalSubmitBtn = document.getElementById('contactSubmitBtn');
 
-  if (generalForm) {
-    generalForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const formData = new FormData(generalForm);
-      const originalText = generalSubmitBtn.textContent;
+if (generalForm) {
+  generalForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const formData = new FormData(generalForm);
+    const originalText = generalSubmitBtn.textContent;
 
-      generalSubmitBtn.textContent = 'Sending Message...';
-      generalSubmitBtn.disabled = true;
+    generalSubmitBtn.textContent = 'Sending Message...';
+    generalSubmitBtn.disabled = true;
 
-      fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        body: formData
-      })
-      .then(async (response) => {
-        const json = await response.json();
-        generalResult.style.display = 'block';
-        if (response.status === 200) {
-          generalResult.style.color = 'var(--gold-hover)';
-          generalResult.innerHTML = '✦ Thank you! Your message has been sent successfully. We will reply within 24 hours.';
-          generalForm.reset();
-        } else {
-          generalResult.style.color = '#c0392b';
-          generalResult.innerHTML = json.message || 'Something went wrong. Please email us directly at gsmusictrio@gmail.com';
-        }
-      })
-      .catch(() => {
-        generalResult.style.display = 'block';
+    fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    })
+    .then(async (response) => {
+      const json = await response.json();
+      generalResult.style.display = 'block';
+      if (response.status === 200) {
+        generalResult.style.color = 'var(--gold-hover)';
+        generalResult.innerHTML = '✦ Thank you! Your message has been sent successfully. We will reply within 24 hours.';
+        generalForm.reset();
+      } else {
         generalResult.style.color = '#c0392b';
-        generalResult.innerHTML = 'Network error. Please try again or contact us directly.';
-      })
-      .finally(() => {
-        generalSubmitBtn.textContent = originalText;
-        generalSubmitBtn.disabled = false;
-        setTimeout(() => {
-          generalResult.style.display = 'none';
-        }, 8000);
-      });
+        generalResult.innerHTML = json.message || 'Something went wrong. Please email us directly at stella.karalis@goldenstarmusic.agency';
+      }
+    })
+    .catch(() => {
+      generalResult.style.display = 'block';
+      generalResult.style.color = '#c0392b';
+      generalResult.innerHTML = 'Network error. Please try again or email us directly at stella.karalis@goldenstarmusic.agency';
+    })
+    .finally(() => {
+      generalSubmitBtn.textContent = originalText;
+      generalSubmitBtn.disabled = false;
+      setTimeout(() => {
+        generalResult.style.display = 'none';
+      }, 8000);
     });
-  }
+  });
+}
 
 
 // 8. Filtrado de Conciertos por Categoría & URL Search Params
@@ -321,11 +319,17 @@ document.addEventListener('DOMContentLoaded', () => {
     item.addEventListener('click', () => openGalleryIndex(index));
   });
 
-  // Botón de reproducción de teaser en pantalla completa
+  // Botón de reproducción de teaser en pantalla completa dinámico
   const playTeaserBtn = document.getElementById('playTeaserBtn');
-  if (playTeaserBtn) {
+  const teaserVideoEl = document.getElementById('nosferatuTeaserVideo');
+
+  if (playTeaserBtn && teaserVideoEl) {
     playTeaserBtn.addEventListener('click', () => {
-      openLightboxVideo('assets/nosferatu-trailer.mp4');
+      // Obtiene la ruta exacta del <source> que esté en el HTML
+      const videoSource = teaserVideoEl.querySelector('source')?.getAttribute('src');
+      if (videoSource) {
+        openLightboxVideo(videoSource);
+      }
     });
   }
 

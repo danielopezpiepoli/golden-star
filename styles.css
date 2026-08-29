@@ -1195,16 +1195,17 @@ header.header-scrolled {
   background-color: var(--bg-surface-alt);
 }
 
+/* Altura máxima generosa para que quepa todo el texto en cualquier móvil */
 .city-accordion-item.active .city-accordion-body {
-  max-height: 400px;
+  max-height: 900px;
   border-top: 1px solid var(--border-subtle);
 }
 
 .venue-info-grid {
-  padding: 28px;
+  padding: 24px 28px;
   display: grid;
   grid-template-columns: 1.4fr 1fr;
-  gap: 30px;
+  gap: 24px;
   align-items: center;
 }
 
@@ -1243,6 +1244,34 @@ header.header-scrolled {
 
 .city-accordion-item.filtered-out {
   display: none !important;
+}
+
+/* En pantallas de menos de 768px: pasa a 1 columna vertical limpia */
+@media (max-width: 768px) {
+  .city-accordion-header {
+    padding: 18px 16px;
+  }
+
+  .city-title-group {
+    gap: 12px;
+  }
+
+  .city-date {
+    min-width: unset;
+    font-size: 1.05rem;
+  }
+
+  .venue-info-grid {
+    grid-template-columns: 1fr;
+    padding: 20px 16px;
+    gap: 20px;
+  }
+
+  .ticket-action-box {
+    margin-top: 8px;
+    border-top: 1px dashed rgba(184, 138, 56, 0.25);
+    padding-top: 16px;
+  }
 }
 
 /* ================= WEDDING PAGE STYLES ================= */
@@ -1517,6 +1546,25 @@ header.header-scrolled {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 1.6;
+}
+
+.direct-mail-note {
+  margin-top: 18px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-align: center;
+  line-height: 1.5;
+}
+
+.direct-mail-note a {
+  color: var(--gold-primary);
+  font-weight: 600;
+  text-decoration: underline;
+  transition: var(--transition-smooth);
+}
+
+.direct-mail-note a:hover {
+  color: var(--gold-hover);
 }
 
 .wedding-form {
