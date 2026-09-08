@@ -73,7 +73,7 @@
             id="nosferatuTeaserVideo"
             playsinline 
             preload="metadata" 
-            poster="assets/Nosferatu-poster.jpg">
+            poster="assets/Nosferatu-baner-2.png">
             <source src="assets/Nosferatu-trailer-2.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -93,7 +93,7 @@
         <div class="nosferatu-full-poster-wrapper" id="mainPosterTrigger" title="Click to expand poster">
           <img src="assets/Nosferatu-poster.jpg" alt="Nosferatu (1922) Official Cine-Concert Poster" class="lightbox-trigger" data-type="image" data-src="assets/Nosferatu-poster.jpg">
           <div class="media-hover-overlay">
-            <span data-i18n="lightbox_expand">🔍 Click to Expand</span>
+            <!--<span data-i18n="lightbox_expand">🔍 Click to Expand</span>-->
           </div>
         </div>
 
@@ -150,8 +150,14 @@
           </div>
 
           <div class="conductor-highlight">
-            <span class="cast-instrument" data-i18n="nosf_role_conductor">Musical Director & Conductor</span>
-            <span class="cast-name conductor-name">Katarzyna Marek</span>
+            <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 8px;">
+              <span class="cast-instrument" data-i18n="nosf_role_director">Musical Director</span>
+              <span class="cast-name" style="font-size: 1.05rem; font-weight: 700;">Stella Karalis</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: baseline; border-top: 1px dashed rgba(184, 138, 56, 0.25); padding-top: 8px;">
+              <span class="cast-instrument" data-i18n="nosf_role_conductor">Conductor</span>
+              <span class="cast-name" style="font-size: 1.05rem; font-weight: 700;">Katarzyna Marek</span>
+            </div>
           </div>
 
           <div class="ensemble-divider" data-i18n="nosf_ensemble_tag">Ensemble (Golden Star Augmented Sextet & Piano)</div>

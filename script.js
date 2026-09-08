@@ -466,6 +466,11 @@ document.addEventListener('DOMContentLoaded', () => {
       pl: "Kup Bilety na Eventfrog ↗",
       de: "Tickets auf Eventfrog Kaufen ↗"
     },
+    tour_btn_buy_generic: {
+      en: "Buy Tickets ↗",
+      pl: "Kup Bilety ↗",
+      de: "Tickets Kaufen ↗"
+    },
 
     // Date 3: Nosferatu Toruń (OCT 29)
     tour_d3_date: {
@@ -1419,10 +1424,15 @@ document.addEventListener('DOMContentLoaded', () => {
       pl: "Wykonawcy i Obsada",
       de: "Mitwirkende & Besetzung"
     },
+    nosf_role_director: {
+      en: "Musical Director",
+      pl: "Dyrektor Muzyczny",
+      de: "Musikalische Leiterin"
+    },
     nosf_role_conductor: {
-      en: "Musical Director & Conductor",
-      pl: "Kierownictwo Muzyczne i Dyrygent",
-      de: "Musikalische Leitung & Dirigentin"
+      en: "Conductor",
+      pl: "Dyrygent",
+      de: "Dirigentin"
     },
     nosf_ensemble_tag: {
       en: "Ensemble (Golden Star Augmented Sextet & Piano)",
